@@ -11,17 +11,18 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 ul {
 	list-style-type: none;
 }
 span.bold {
 	font-weight: bold;
 }
-
+li.horizontal {
+	display: inline-block;
+}
 li {
 	color: blue;
-	/*float: left;*/
-	display: inline-block;
 }
 li.grey {
 	color: grey;
@@ -29,14 +30,26 @@ li.grey {
 div h1.title {
 	color: #06365f
 }
-
-.textbox {
-	margin-top: 20px;
-	padding: 0px 20px 0px 20px;
+p {
+	color: #000;
 }
+
+
 
 .frame {
 	background-image: url('../images/frame.png');
 	width: 504px;
 	height: 284px;
+}
+.textbox {
+	margin-top: 20px;
+	padding: 0px 20px 0px 20px;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }
