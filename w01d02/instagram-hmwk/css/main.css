@@ -11,6 +11,13 @@ body {
   width: 100vw;
   height: 100vh;
 }
+main {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 
 ul {
 	list-style-type: none;
@@ -33,7 +40,6 @@ div h1.title {
 p {
 	color: #000;
 }
-
 
 
 .frame {
