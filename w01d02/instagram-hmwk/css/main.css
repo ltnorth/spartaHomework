@@ -21,9 +21,7 @@ main {
 ul {
 	list-style-type: none;
 }
-span.bold {
-	font-weight: bold;
-}
+
 li.horizontal {
 	display: inline-block;
 }
@@ -53,8 +51,10 @@ div.align {
 
 .frame {
 	background-image: url('../images/frame.png');
+	background-repeat: no-repeat;
 	width: 504px;
 	height: 284px;
+	padding: 1px 10px;
 }
 /*.centered {
 	position: absolute;
