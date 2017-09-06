@@ -28,7 +28,7 @@ li.horizontal {
 	display: inline-block;
 }
 li {
-	color: blue;
+	color: #1c5380;
 }
 li.grey {
 	color: grey;
@@ -37,7 +37,7 @@ li.space {
 	margin: 5px;
 }
 div .title {
-	color: #06365f
+	color: #06365f;
 }
 p {
 	color: #000;
