@@ -1,7 +1,13 @@
 .centre {
 	text-align: center;
 }
-
+img.float {
+	float: left;
+	margin-right: 30px;
+}
+#pad {
+	padding: 30px;
+}
 @media only screen and (max-width: 500px){
 	div.disappear {
 		display: none;
