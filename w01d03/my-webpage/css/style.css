@@ -11,6 +11,9 @@
 body {
 	background-color: #fcfcfc;
 }
+.bg-light{
+	background-color: #F0C808!important
+}
 .card {
 	border: 0;
 }
@@ -20,9 +23,6 @@ body {
 }
 .colMargin {
 	margin: 30px 0;
-}
-.contMargin {
-	margin: 40px 0;
 }
 #pad {
 	padding: 30px;
