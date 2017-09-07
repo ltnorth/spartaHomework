@@ -4,16 +4,20 @@
 /*.center-height {
 	vertical-align: middle;
 }*/
-img.float {
+/*img.float {
 	float: left;
 	margin-right: 30px;
-}
+}*/
 .add-area {
 	margin: 30px;
+	width: 250px;
 }
 #pad {
 	padding: 30px;
 	background-size: contain;
+}
+.pad-more {
+	padding: 40px;
 }
 .row{
 	margin: 30px 0;
