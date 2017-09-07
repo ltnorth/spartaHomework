@@ -7,7 +7,7 @@
 </head>
 <body>
 	<span id="home"></span>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light disappear">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light disappear-when-big">
 	  <span class="navbar-brand">Liam</span>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -16,13 +16,16 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Games<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#games">Games<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Music</a>
+	        <a class="nav-link" href="#music">Music</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Food</a>
+	        <a class="nav-link disabled" href="#food">Food</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#contact">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -35,40 +38,50 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<img src="images/me.jpeg" width="250" class="rounded-circle">
+
+
+		
+			<div class="col-md-4 center">
+				<img src="images/me.jpeg" width="250" class="rounded-circle add-area">
 			</div>
+
+
+
 			<div class="col-md-8">
 				<div class="card">
 					<div class="card-body">
 						<h2>About me</h2>
 						<p class="card-text">Here is some text about me that will hopefully be displayed next to my picture.</p>
+						<p class="disappear-when-small small-font"><a href="#contact">Contact me</a></p>
 					</div>
 				</div>
 			</div>
+
+
+
 		</div>
-		<div class="row disappear">
+		<div class="row disappear-when-small">
 			<div class="card col-md-4" style="width: 20rem;">
 				<a href="#games">
 					<img class="card-img-top rounded-circle" src="images/space-invader.png" width="50">
 					<div class="card-body">
-						<h4 class="card-title centre">Games</h4>
+						<h4 class="card-title center">Games</h4>
 					</div>
 				</a>
 			</div>
 			<div class="card col-md-4" style="width: 20rem;">
-				<a href="#">
+				<a href="#music">
 					<img class="card-img-top rounded-circle" src="images/music-icon.png" width="50">
 					<div class="card-body">
-						<h4 class="card-title centre">Music</h4>
+						<h4 class="card-title center">Music</h4>
 					</div>
 				</a>
 			</div>
 			<div class="card col-md-4" style="width: 20rem;">
-				<a href="#">
+				<a href="#food">
 					<img class="card-img-top rounded-circle" src="images/food-icon.png" width="50">
 					<div class="card-body">
-						<h4 class="card-title centre">Food</h4>
+						<h4 class="card-title center">Food</h4>
 					</div>
 				</a>
 			</div>
@@ -77,11 +90,11 @@
 
 	<!-- End of grid -->
 
-	<div class="card container-fluid" id="games" style="width: 20rem;">
+	<div class="card" id="games">
 	  <div class="card-body">
 	    <h4 class="card-title">Games</h4>
 	    <div class="card-text">
-	    	<p>Video games are my passion and most of my free time is taken up with playing them. I love to follow the gaming industry and watching out for when the latest games are coming out.<p>
+	    	<p>Video games are my passion and most of my free time is taken up with playing them. I love to follow the gaming industry and watching out for when the latest games are coming out.</p>
 
 	    	<div>
 	    		Here are a list of my favourite games:
@@ -97,6 +110,66 @@
 	  </div>
 	</div>
 	
+	<div class="card" id="music">
+	  <div class="card-body">
+	    <h4 class="card-title">Music</h4>
+	    <div class="card-text">
+	    	<p></p>
+
+	    	<div>
+	    		Here are a list of my favourite music artists:
+	    		<ul>
+	    			<li>Lonely the Brave</li>
+	    			<li>London Grammar</li>
+	    			<li>Don Broco</li>
+	    			<li>The XX</li>
+	    		</ul>
+	    	</div>
+	    </div>
+	    <a href="#home" class="card-link">Back to top</a>
+	  </div>
+	</div>
+
+	<div class="card" id="food">
+	  <div class="card-body">
+	    <h4 class="card-title">Food</h4>
+	    <div class="card-text">
+	    	<p>Who doesn't love to eat good food? </p>
+
+	    	<div>
+	    		Here are a list of my recommended restaurants around Leeds:
+	    		<ul>
+	    			<li>Red's True Barbeque</li>
+	    			<li>Meat and Liquor</li>
+	    			<li>Belgrave Music Hall</li>
+	    			<li>Almost Famous</li>
+	    		</ul>
+	    	</div>
+	    </div>
+	    <a href="#home" class="card-link">Back to top</a>
+	  </div>
+	</div>
+
+	<div class="card" id="contact">
+	  <div class="card-body">
+	    <h4 class="card-title">Contact</h4>
+	    <div class="card-text">
+	    	<p>Get in touch!</p>
+
+	    	<address>
+	    		<strong>Liam North</strong><br>
+	    		32 Maplin Avenue <br>
+	    		Salendine Nook <br>
+	    		Huddersfield <br>
+	    		HD3 3GP <br><br>
+	    		Tel: 07534 121516 <br>
+	    		Email: <a href="#">liam_north@outlook.com</a>
+	    	</address>
+	    	
+	    </div>
+	    <a href="#home" class="card-link">Back to top</a>
+	  </div>
+	</div>
 
 
 
@@ -109,9 +182,9 @@
 
 
 
-
-
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 
 </body>
