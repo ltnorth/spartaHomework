@@ -34,9 +34,9 @@ form, .hMargin {
 .colMargin {
 	margin: 30px 0;
 }
-#pad {
+.pad {
 	padding: 30px;
-	background-size: contain;
+	float: right;
 }
 .pad-more {
 	padding: 40px;
@@ -69,6 +69,10 @@ div.green {
 }
 .baby {
 	color: #FCFCFC;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 
