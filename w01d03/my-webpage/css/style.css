@@ -12,7 +12,11 @@ body {
 	background-color: #fcfcfc;
 }
 .bg-light{
-	background-color: #F0C808!important
+	background-color: #FFBF00!important
+}
+.navbar-brand, .navbar-nav, .nav-item, .nav-link {
+	/*font-family: Georgia;*/
+	color: #2E294E!important
 }
 .card {
 	border: 0;
