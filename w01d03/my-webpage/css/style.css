@@ -8,6 +8,12 @@
 	float: left;
 	margin-right: 30px;
 }*/
+body {
+	background-color: #fcfcfc;
+}
+.card {
+	border: 0;
+}
 .add-area {
 	margin: 30px;
 	width: 250px;
@@ -29,6 +35,26 @@
   max-width:50%;
   max-height:50%;
 }
+div.purple {
+	background-color: #46237A;
+}
+div.magic {
+	background-color: #FF495C;
+}
+div.blue {
+	background-color: #449DD1;
+}
+div.green {
+	background-color: #3DDC97;
+}
+.baby {
+	color: #FCFCFC;
+}
+
+
+
+/*Media queries*/
+
 @media only screen and (max-width: 768px){
 	.disappear-when-small {
 		display: none;
@@ -38,7 +64,4 @@
 	.disappear-when-big{
 		display: none;
 	}
-}
-* {
-	border: none;
 }
