@@ -11,6 +11,9 @@
 body {
 	background-color: #fcfcfc;
 }
+form, .hMargin {
+	margin: 15px;
+}
 .bg-light{
 	background-color: #FFBF00!important
 }
