@@ -1,19 +1,5 @@
-// The player move is gathered and stored in a variable
-    // Prompt
 alert("Welcome to rock, paper, scissors! It's first to 10, click okay when ready to begin!");
-// The app generates a random computer move
-  // Math.random, Math.floor 
-// The computer move is stored in a variable
 
-
-// Compare moves and see who has won, or if it's a draw
-  // If the moves are the same, it's a draw
-  // Rock beats scissors
-  // Scissors beat paper
-  // Paper beats rock
-
-// Tell the user the outcome of the game
-    // Alert
 var pScore = 0;
 var cScore = 0;
 
@@ -76,15 +62,3 @@ while(true) {
         }
     }
 }
-
-
-
-
-
-
-// BONUS
-    // Update the scores for computer and player
-
-    // The first player to reach a score of 10 is the overall winner
-
-    // Be able to reset the game
