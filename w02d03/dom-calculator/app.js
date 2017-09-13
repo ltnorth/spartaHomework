@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	var display = document.getElementById("display");
 	var value1 = null;
 	var value2 = null;
+	var operator = null;
 	// Get all the buttons showing stuff in the display
 
 	for(var i = 0; i < buttons.length; i++) {
@@ -43,13 +44,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 	// Saving the operator buttons as variables
-
-	
+	var operatorIndex = [3, 7, 11, 15];
+	for(var i = 0; i < buttons.length; i++) {
+		if(operatorIndex.indexOf(i) !== -1) {
+			buttons[i].addEventListener("click", function() {
+				operator = this.value;
+			});
+		}
+	}
 
 
 	// Making the calculations work
 
-
+	
 
 
 });
