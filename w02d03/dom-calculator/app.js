@@ -29,11 +29,9 @@ document.addEventListener("DOMContentLoaded", function(){
 				if(numCheck === false) {
 					value1 = value1 + (this.value).toString();
 					display.innerText = value1;
-					console.log(value1);
 				} else {
 					value2 = value2 + (this.value).toString();
 					display.innerText = value2;
-					console.log(value2);
 				}
 			});
 		}
@@ -56,10 +54,13 @@ document.addEventListener("DOMContentLoaded", function(){
 	for(var i = 0; i < buttons.length; i++) {
 		if(operatorIndex.indexOf(i) !== -1) {
 			buttons[i].addEventListener("click", function() {
-				operator = this.value;
-				display.innerText = operator;
-				numCheck = true;
-				console.log(operator);
+				if(value1){
+					operator = this.value;
+					display.innerText = operator;
+					numCheck = true;
+				} else {
+					alert("Please select a number first");
+				}
 			});
 		}
 	}
