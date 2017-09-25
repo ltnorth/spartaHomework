@@ -25,7 +25,7 @@ def bmi(num, mass, height)
 end
 
 
-puts "\n***CalcIt*** \n\n(b)asic, (a)dvanced"
+puts "\n***CalcIt*** \n\n(b)asic, (a)dvanced, bm(i)"
 which_calc = gets.chomp
 
 if which_calc == "b"
@@ -64,6 +64,21 @@ elsif which_calc == "a"
 		else
 		  puts "No valid operator chosen - exiting calculator..."
 	end
+elsif which_calc == "i"
+		puts "Which units? (m)etric or (i)mperial"
+		op = gets.chomp
+		puts "Enter your mass in kilograms for metric or pounds for imperial:"
+		mass = gets.chomp.to_i
+		puts "Enter your height in metres for metric and inches for imperial:"
+		height = gets.chomp.to_f
+		case op
+			when "m"
+				puts bmi(0, mass, height)
+			when "i"
+				puts bmi(1, mass, height)
+			else
+		  	puts "No valid operator chosen - exiting calculator..."
+		end
 end
 
 
