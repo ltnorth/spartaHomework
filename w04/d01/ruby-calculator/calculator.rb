@@ -16,11 +16,17 @@ end
 def square_root(num)
 	Math.sqrt(num)
 end
+def bmi(num, mass, height)
+	if num == 0
+		mass / (height * height)
+	else
+		(mass * 703) / (height * height)
+	end
+end
 
 
 puts "\n***CalcIt*** \n\n(b)asic, (a)dvanced"
 which_calc = gets.chomp
-# puts which_calc
 
 if which_calc == "b"
 	puts "Which operation would you like to use? (a)ddition, (s)ubtraction, (m)ultiplication, (d)ivision"
@@ -39,7 +45,7 @@ if which_calc == "b"
 		when "d"
 		  puts divide(num1, num2.to_f)
 		else
-		  puts "Invalid entry - calculator shutting down..."
+		  puts "No valid operator chosen - exiting calculator..."
 	end
 elsif which_calc == "a"
 	puts "Which operation would you like to use? (p)ower, (s)quare root"
@@ -56,7 +62,7 @@ elsif which_calc == "a"
 			num = gets.chomp.to_i
 			puts square_root(num)
 		else
-		  puts "Invalid entry - calculator shutting down..."
+		  puts "No valid operator chosen - exiting calculator..."
 	end
 end
 
