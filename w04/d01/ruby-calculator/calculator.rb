@@ -23,9 +23,22 @@ def bmi(num, mass, height)
 		(mass * 703) / (height * height)
 	end
 end
+def trip(index, distance, speed, mpg=0, cpg=0)
+	if index == 0
+		time = (distance / speed).round(2)
+	else
+		if 60 - speed > 0
+			cost = ((distance / mpg) * cpg).round(2)
+		else
+			new_mpg = mpg - ((speed - 60) * 2)
+			cost = ((distance / new_mpg) * cpg).round(2)
+		end
+	end
+end
 
 
-puts "\n***CalcIt*** \n\n(b)asic, (a)dvanced, bm(i)"
+
+puts "\n***CalcIt*** \n\n(b)asic, (a)dvanced, bm(i), (t)rip calculator"
 which_calc = gets.chomp
 
 if which_calc == "b"
@@ -79,6 +92,16 @@ elsif which_calc == "i"
 			else
 		  	puts "No valid operator chosen - exiting calculator..."
 		end
+elsif which_calc == "t"
+	puts "How far are you travelling in miles?"
+	distance = gets.chomp.to_f
+	puts "What will be your average speed?"
+	speed = gets.chomp.to_f
+	puts "What is your fuel efficiency (mpg)?"
+	mpg = gets.chomp.to_f
+	puts "How much does your fuel cost per gallon in pounds?"
+	cpg = gets.chomp.to_f
+	puts "Your journey will take #{trip(0, distance, speed)} hour(s) and will cost £"+trip(1, distance, speed, mpg, cpg).to_s
 end
 
 
