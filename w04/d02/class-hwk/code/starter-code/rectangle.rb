@@ -1,7 +1,7 @@
 class Rectangle
 	attr_accessor :width, :height
 
-	def initialize width, height
+	def initialize(width, height)
 		self.width = width
 		self.height = height
 	end
@@ -14,8 +14,12 @@ class Rectangle
 		(self.width * 2) + (self.height * 2)
 	end
 
-	def scale factor
+	def scale(factor)
 		self.width *= factor
 		self.height *= factor
+	end
+
+	def info
+		puts "Your rectangle has properties: \n Area: #{self.calculate_area} Perimeter: #{self.calculate_perimeter}"
 	end
 end

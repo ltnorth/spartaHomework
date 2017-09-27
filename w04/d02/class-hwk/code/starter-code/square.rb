@@ -1,7 +1,7 @@
 class Square
 	attr_accessor :length
 
-	def initialize length
+	def initialize(length)
 		self.length = length
 	end
 
@@ -13,7 +13,11 @@ class Square
 	  self.length * 4
 	end
 
-	def scale factor
+	def scale(factor)
 		self.length *= factor
+	end
+
+	def info
+		puts "Your square has properties: \n Area: #{self.calculate_area} Perimeter: #{self.calculate_perimeter}"
 	end
 end
