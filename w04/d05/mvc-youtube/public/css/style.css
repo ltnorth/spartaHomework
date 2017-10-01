@@ -1,0 +1,26 @@
+body {
+	font-family: "Helvetica";
+	width: 100vw;
+	height: 100vh;
+}
+ul {
+	width: 75vw;
+	margin: 0 auto;
+	list-style-type: none;
+}
+li {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	padding: 50px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.show {
+	width: 66vw;
+}
