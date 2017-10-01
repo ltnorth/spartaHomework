@@ -1,0 +1,24 @@
+<h1>Edit video</h1>
+<form action="/<%= @video.id %>" method="POST">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @video.title %>">
+  </div>
+
+  <div>
+    <label>Description</label>
+    <textarea name="description"><%= @video.description %></textarea>
+  </div>
+
+  <div>
+    <label>Url</label>
+    <textarea name="url"><%= @video.url %></textarea>
+  </div>
+
+  <div>
+    <input type="submit" value="Save video">
+  </div>
+  <% if(@video.id) %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>

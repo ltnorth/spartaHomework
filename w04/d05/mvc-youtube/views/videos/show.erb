@@ -1,0 +1,12 @@
+<h1><%= @video.title %></h1>
+<div>
+	<iframe width="560" height="315" src="<%= @video.url %>" frameborder="0" allowfullscreen></iframe>
+	<p><%= @video.description %></p>
+</div>
+
+<a href="/<%= @video.id %>/edit">Edit</a>
+
+<form action="/<%= @video.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form> 
