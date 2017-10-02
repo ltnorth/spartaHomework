@@ -1,5 +1,7 @@
 class VideosController < Sinatra::Base
 
+	# 32 characters to drop at the start of the url
+
 	# sets root as the parent-directory of the current file
   set :root, File.join(File.dirname(__FILE__), '..')
 
