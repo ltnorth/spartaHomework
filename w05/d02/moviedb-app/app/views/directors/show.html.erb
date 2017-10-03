@@ -1,0 +1,22 @@
+<h1><%= @director.name %></h1>
+
+<table>
+	<tr>
+		<th>DoB:</th>
+		<td><%= @director.dob %></td>
+	</tr>
+	<tr>
+		<th>Rating:</th>
+		<td><%= @director.rating %></td>
+	</tr>
+</table>
+<h2>Movies by <%= @director.name %></h2>
+<ul>
+	<% @director.movies.each do |movie| %>
+		<li><a href="/movies/<%= movie.id %>"><%= movie.title %></a></li>
+	<% end %>
+</ul>
+
+<%= link_to 'Home', directors_url %>
+<%= link_to 'Edit', edit_director_path(@director) %>
+<%= link_to 'Destroy', @director, method: :delete %>

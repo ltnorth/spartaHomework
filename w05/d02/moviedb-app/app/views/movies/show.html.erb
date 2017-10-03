@@ -1,0 +1,20 @@
+<h1><%= @movie.title %></h1>
+
+<table>
+	<tr>
+		<th>Plot summary:</th>
+		<td><%= @movie.summary %></td>
+	</tr>
+	<tr>
+		<th>Release date:</th>
+		<td><%= @movie.release %></td>
+	</tr>
+	<tr>
+		<th>Director:</th>
+		<td><a href="/directors/<%= @movie.director_id %>"><%= Director.find(@movie.director_id).name %></a></td>
+	</tr>
+</table>
+
+<%= link_to 'Home', movies_url %>
+<%= link_to 'Edit', edit_movie_path(@movie) %>
+<%= link_to 'Destroy', @movie, method: :delete %>

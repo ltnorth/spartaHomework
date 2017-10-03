@@ -1,0 +1,22 @@
+<%= form_with(model: director, local: true) do |form| %>
+
+	<div class="field">
+		<%= form.label :name %>
+		<%= form.text_field :name, id: :director_name %>
+	</div>
+
+	<div class="field">
+		<%= form.label :dob %>
+		<%= form.text_field :dob, id: :director_dob %>
+	</div>
+
+	<div class="field">
+		<%= form.label :rating %>
+		<%= form.text_field :rating, id: :director_rating %>
+	</div>
+	
+	<div class="actions">
+    <%= form.submit %>
+  </div>
+
+<% end %>
