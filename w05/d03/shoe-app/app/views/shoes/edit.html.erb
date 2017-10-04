@@ -1,0 +1,6 @@
+<h1>Editing Shoe</h1>
+
+<%= render 'form', shoe: @shoe %>
+
+<%= link_to 'Show', user_shoe_path(current_user, @shoe) %> |
+<%= link_to 'Back', user_shoes_path %>

@@ -1,0 +1,15 @@
+<%= form_for([current_user, @shoe]) do |f| %>
+
+  <%= f.label :style %>
+  <%= f.text_field :style %>
+
+  <%= f.label :size %>
+  <%= f.text_field :size %>
+
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+
+  <%= f.submit %>
+
+
+<% end %>

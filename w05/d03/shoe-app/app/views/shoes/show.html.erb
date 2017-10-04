@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @shoe.style %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @shoe.size %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @shoe.color %>
+</p>
+
+<%= link_to 'Edit', edit_user_shoe_path(@shoe) %> |
+<%= link_to 'Back', user_shoes_path %>

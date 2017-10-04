@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Shoes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Size</th>
+      <th>Color</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shoes.each do |shoe| %>
+      <tr>
+        <td><%= shoe.style %></td>
+        <td><%= shoe.size %></td>
+        <td><%= shoe.color %></td>
+        <td><%= link_to 'Show', user_shoe_path(shoe.user_id, shoe) %></td>
+        <td><%= link_to 'Edit', edit_user_shoe_path(shoe.user_id, shoe) %></td>
+        <td><%= link_to 'Destroy', user_shoe_path(current_user, shoe), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shoe', new_user_shoe_path(current_user.id) %>
