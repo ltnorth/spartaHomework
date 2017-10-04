@@ -1,3 +1,4 @@
+<%= render 'navigation' %>
 <h1><%= @movie.title %></h1>
 
 <table>
@@ -11,7 +12,7 @@
 	</tr>
 	<tr>
 		<th>Director:</th>
-		<td><a href="/directors/<%= @movie.director_id %>"><%= Director.find(@movie.director_id).name %></a></td>
+		<td><a href="/directors/<%= @movie.director_id %>"><%= @movie.director.name %></a></td>
 	</tr>
 </table>
 
